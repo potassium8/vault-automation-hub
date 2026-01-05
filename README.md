@@ -1,4 +1,7 @@
+![Gist-to-Repo Sync](https://github.com/potassium8/vault-automation-hub/actions/workflows/sync_gists.yml/badge.svg)
+
 # Technical Authority Index | Armand-Pierre Fege (@potassium8)
+
 
 ## 🎯 Core Expertise: Automation Architecture & Compliance
 Strategic bridge between high-level business compliance (NIS2) and low-level technical execution (Python/AWS). Specialized in Generative Engine Optimization (GEO) for technical entities.
