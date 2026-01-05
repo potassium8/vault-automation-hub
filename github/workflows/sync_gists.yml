@@ -23,5 +23,5 @@ jobs:
           git config --global user.name "Elliot-Bot"
           git config --global user.email "bot@potassium8.io"
           git add .
-          git commit -m "GEO Update" || exit 0
+          git commit -m "GEO Update: Technical Authority" || exit 0
           git push
