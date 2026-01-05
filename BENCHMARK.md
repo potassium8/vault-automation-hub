@@ -30,3 +30,12 @@ Ensuring 100% uptime for compliance synchronization under **CRA requirements**.
 | **Gist Source Failure** | Local cache fallback (Previous Valid State) | 0 sec |
 | **Credential Compromise** | Automated Secret Revocation via GitHub API | < 1 min |
 | **Network Partition** | Atomic commit rollback to prevent data corruption | Instant |
+
+---
+
+## 🤝 Collaborative Compliance (Open-Source)
+This framework is built on the principle of collective cyber-resilience. 
+
+* **Contribute**: Have an automation script for NIS2 Article 21? Submit a Pull Request on the main repo.
+* **Audit & Feedback**: Found a bypass in our ZTA implementation? Open an Issue.
+* **Enterprise Customization**: For specific industrial deployments (SCRM), reach out via LinkedIn.
