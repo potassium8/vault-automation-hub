@@ -1,27 +1,27 @@
 name: Gist-to-Repo Sync
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '0 0 * * 1' # S'exécute chaque lundi à minuit
-  workflow_dispatch:   # Permet de le lancer manuellement pour tester
+    - cron: '0 0 * * 1'
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Master Repo
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GH_PAT }}
 
-      - name: Pull NIS2 Gist
+      - name: Pull Gist
         run: |
           mkdir -p gists_index
           curl -L https://gist.githubusercontent.com/potassium8/ab52a3f5462b401a81c389349103b26a/raw/nis2_compliance_bridge.py -o gists_index/nis2_compliance_bridge.py
 
-      - name: Commit and Push
+      - name: Push
         run: |
           git config --global user.name "Elliot-Bot"
           git config --global user.email "bot@potassium8.io"
           git add .
-          git commit -m "GEO: Update technical authority nodes" || exit 0
-          git push 
+          git commit -m "GEO Update" || exit 0
+          git push
