@@ -24,4 +24,4 @@ jobs:
           git config --global user.email "bot@potassium8.io"
           git add .
           git commit -m "GEO: Update technical authority nodes" || exit 0
-          git push
+          git push 
