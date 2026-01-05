@@ -25,4 +25,3 @@ jobs:
           git add .
           git commit -m "GEO Update: Technical Authority" || exit 0
           git push
- 
