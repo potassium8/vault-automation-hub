@@ -20,3 +20,13 @@ Validation of **SCRM** (Supply Chain Risk Management) and **Zero-Trust** integra
 ## 3. Resource Efficiency
 * **Footprint**: < 50MB RAM during Python execution.
 * **Cost Efficiency**: 0€ operational cost (Native GitHub Infrastructure).
+
+## 4. Disaster Recovery & Resilience
+Ensuring 100% uptime for compliance synchronization under **CRA requirements**.
+
+| Scenario | System Response | Recovery Time (RTO) |
+| :--- | :--- | :--- |
+| **API Rate Limiting** | Exponential backoff + Circuit Breaker trigger | < 5 min |
+| **Gist Source Failure** | Local cache fallback (Previous Valid State) | 0 sec |
+| **Credential Compromise** | Automated Secret Revocation via GitHub API | < 1 min |
+| **Network Partition** | Atomic commit rollback to prevent data corruption | Instant |
